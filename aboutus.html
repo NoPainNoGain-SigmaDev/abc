@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ABC Fitness Studio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width inital-scale:1.0" />
+    <link rel="stylesheet" href="./stylesN.css" />
+    <script
+      src="https://kit.fontawesome.com/5d48c7457f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+
+    <nav id="nav-bar-header">
+      <div class="container flex row jsb ac">
+        <div class="logo flex row jc ac gap-1">
+          <img
+            id="logo"
+            class="logo-size"
+            src="./img/logo.png"
+            alt="ABC Fitness Studio Logo"
+          />
+          <h2 class="title-s">ABC FITNESS STUDIO</h2>
+        </div>
+        <button class="flex column jc ac" id="burger-btn">
+          <i class="fa-solid fa-grip-lines" id="grip-line"></i>
+          <i class="fa-solid fa-x hidden" id="x-mark"></i>
+        </button>
+        <ul class="nav-links flex column jse ac" id="nav-links-header">
+          <li>
+            <a href="./index.html" class="nav-link">Home</a>
+            <div class="horizontal-rule"></div>
+          </li>
+          <li>
+            <a href="./gallery.html" class="nav-link">Gallery</a>
+            <div class="horizontal-rule"></div>
+          </li>
+          <li>
+            <a href="./aboutus.html" class="nav-link">About Us</a>
+            <div class="horizontal-rule"></div>
+          </li>
+          <li>
+            <a href="./events.html" class="nav-link">Events</a>
+            <div class="horizontal-rule"></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <!-- Alert -->
+    <div class="alert hidden" id="alert">
+      <!-- Close Btn -->
+        
+          <button class="flex column jc ac" id="close-alert-btn">
+            <i class="fa-solid fa-x" id="x-mark"></i>
+          </button>
+       
+      <p class="body-l" id="alert-text">Lorem ipsum dolor sit.</p>
+    </div>
+    <main >
+      <!-- Hero Section -->
+      <section class="hero hero-about-us">
+        <div class="shade"></div>
+        <div
+          class="container hero-container flex column jc ac"
+        >
+          <h1 class="title-l about-us-title">nice to meet you</h1>
+        </div>
+      </section>
+      <section class="about-us-info container flex column ac">
+        <p class="about-us-text body-l">
+          We're more than just a fitness studio; we're your neighbors, your
+          friends, and your partners in wellness. At ABC Fitness Studio, we
+          believe in building a strong, supportive community where everyone
+          feels welcome. Let's embark on a journey to a healthier, happier you
+          <strong>-together.</strong>
+        </p>
+        <div class="about-us-hours body">
+          <h3 class="title-m">Come visit us</h3>
+          <p class="flex row ac jfs">
+            <i class="fa-solid fa-battery-full"></i>Monday to Friday: 6 a.m. to
+            8 p.m.
+          </p>
+          <p class="flex row ac jfs">
+            <i class="fa-solid fa-battery-half"></i>Saturday: 8 a.m. to 6 p.m.
+          </p>
+          <p class="flex row ac jfs">
+            <i class="fa-solid fa-battery-quarter"></i>Sunday: Closed
+          </p>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="container form-container flex column ac">
+          <h3 class="title-m form-title">Let’s Talk</h3>
+
+          <form class="container-about-us flex column afs" id="about-us-form" autocomplete="on">
+            <h4 class="body-l">Who's reaching out?</h4>
+            <input
+              type="text"
+              class="contact-input"
+              id="contact-name"
+              placeholder="Ronnie Colemman"
+              required
+            />
+            <h4 class="body-l">Where should we reply?</h4>
+            <input
+              type="email"
+              class="contact-input"
+              id="contact-email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="feedback" class="body-l"
+              ><input
+                type="radio"
+                id="contact-feedback"
+                name="contact-reason"
+                value="contact-feedback"
+                checked
+              /> I have feedback</label
+            >
+            <label for="feedback" class="body-l"
+              ><input
+                type="radio"
+                id="contact-custom-order"
+                name="contact-reason"
+                value="contact-custom-order"
+              /> I want a custom order</label
+            >
+            <textarea
+              class="body-l textarea"
+              rows="8"
+              required
+              id="contact-content"
+              placeholder="Describe your custom order or share any thoughts."
+            ></textarea>
+
+            <button
+                class="card-btn btn btn-green flex row ac jc"
+                id="contact-submit-btn"
+                type="submit"
+              >
+              <i class="fa-solid fa-paper-plane"></i>Send Message
+              </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container container flex column gap-2">
+        <!-- Logo & Social media -->
+        <div class="footer-left flex column ac gap-2">
+          <div class="logo flex row jc ac gap-1">
+            <img
+              id="logo-footer"
+              class="logo-size"
+              src="./img/logo-white.png"
+              alt="ABC Fitness Studio Logo"
+            />
+            <h2 class="title-s">ABC FITNESS STUDIO</h2>
+          </div>
+          <p class="footer-p body">
+            Empowering individuals to achieve their fitness goals through
+            personalized training, supportive community, and premium products.
+          </p>
+          <div class="footer-social-media flex row jfs ac gap-2">
+            <a href="www.facebook.com" class="media-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="www.facebook.com" class="media-icon flex row jc ac">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="www.facebook.com" class="media-icon flex row jc ac">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Nav Bar -->
+        <div class="footer-middle flex column ac">
+          <p class="footer-nav-title body-l strong-w">Quick Links</p>
+          <ul class="footer-nav-links flex column ac gap-2">
+            <li>
+              <a href="./index.html" class="footer-nav-link">Home</a>
+            </li>
+            <li>
+              <a href="./gallery.html" class="footer-nav-link">Gallery</a>
+            </li>
+            <li>
+              <a href="./aboutus.html" class="footer-nav-link">About Us</a>
+            </li>
+            <li>
+              <a href="./events.html" class="footer-nav-link">Events</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="footer-right flex column ac gap-2">
+          <p class="body-l newsletter-title strong-w">Subscribe to Our Newsletter</p>
+          <p class="body newsletter-text">
+            Stay updated with our latest offers, events, and fitness tips.
+          </p>
+          <form class="newsletter-form flex row" id="newsletter-form">
+            <input
+              type="email"
+              id="newsletter-email-input"
+              placeholder="Your email address"
+              required
+            />
+            <button class="btn-green strong-w" id="submit-newsletter-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/nav.js"></script>
+    <script src="./js/alert.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>
